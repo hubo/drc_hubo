@@ -178,7 +178,7 @@ class ConstrainedPathElement():
 class DrcHuboV2WheelTurning( BaseWheelTurning ):
 
     def __init__(self,
-                 HuboModelPath = roslib.packages.get_pkg_dir("drchubo_v2")+'/robots/drchubo-v2.robot.xml',
+                 HuboModelPath = '/etc/hubo-ach/sim/drchubo/drchubo-v2/robots/drchubo-v2.robot.xml',
                  WheelModelPath = roslib.packages.get_pkg_dir("wpi_drc_sim")+'/../models/driving_wheel_tiny.robot.xml' ):
 
         BaseWheelTurning.__init__( self, HuboModelPath, WheelModelPath )        

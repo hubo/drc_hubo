@@ -1,7 +1,7 @@
 <launch>
   <group ns="valve_planner">
     <node pkg="hubo_planner" type="drchubo_planner_interface.py" name="drchubo_planner_interface" output="screen"/>
-    <param name="robot_model" value="$(find drchubo_v2)/robots/drchubo-v2.robot.xml"/>
+    <param name="robot_model" value="/etc/hubo-ach/sim/drchubo/drchubo-v2/robots/drchubo-v2.robot.xml"/>
     <param name="tiny_wheel_model" value="$(find hubo_planner)/models/driving_wheel_tiny.robot.xml"/>
     <param name="read_joint_states" type="bool" value="false"/>
     <param name="use_ikfast" type="bool" value="false"/>
